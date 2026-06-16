@@ -1189,7 +1189,7 @@ blockquote {
 .post-dropzone .dz-text { font-size: 20px; font-weight: 600; letter-spacing: .02em; }
 .post-dropzone input[type="file"] { display: none; }
 
-/*post-textarea*/
+/* POST text*/
 .post-textarea {
   display: block;
   width: 100%;
@@ -1198,13 +1198,20 @@ blockquote {
   min-height: 140px;
   padding: 20px;     
   border-radius: 6px;              
-  background: #F0EEE9;             
+  background: #F0EEE9;              
   color: #1a1a1a;
   font-family: "Noto Sans KR", "Oswald", sans-serif;
   font-size: 14px;
   line-height: 1.6;
   letter-spacing: 0.02em;
+  resize: vertical;
+  transition: border-color 0.2s ease, border-style 0.2s ease, background 0.2s ease;
 }
+
+.post-textarea::placeholder {
+  color: #8a8a8a;
+}
+
 
 .mood-gallery {
   display: flex;
